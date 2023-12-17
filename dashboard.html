@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polling App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- <script src="scripts/logic.js" defer></script> -->
+    <!-- Eager Loading-->
+   
+    <script src="scripts/logic.js" type="module" ></script>
+</head>
+<body>
+    <div class="container">
+    <h1 class="alert alert-info text-center">Welcome <span id="user-info"></span> &nbsp;Polling App</h1>
+    <button id="add-question" class="btn btn-primary"><i class="fa-regular fa-square-plus fa-beat me-2" style="color: #4ad317;"></i>Add a Question</button>
+    <!-- <button onclick="showQuestion()" class="btn btn-primary"><i class="fa-regular fa-square-plus fa-beat me-2" style="color: #4ad317;"></i>Add a Question</button> -->
+    <br>
+    <hr>
+    <p id="msg"></p>
+    <div id="question" class="form-group">
+        
+        <input id="ques" class='form-control' type="text" placeholder="Type a Question">
+        <br>
+        <label for="">a</label>
+        <input id="option1" class='form-control' type="text" placeholder="Type Option1">
+        <br>
+        <label for="">b</label>
+        <input id="option2" class='form-control' type="text" placeholder="Type Option2">
+        <br>
+        <label for="">c</label>
+        <input id="option3" class='form-control' type="text" placeholder="Type Option3">
+        <br>
+        <label for="">d</label>
+        <input id="option4" class='form-control' type="text" placeholder="Type Option4">
+        <br>
+        <input id="rightans" class='form-control' type="text" placeholder="Correct Answer a or b or c or d">
+        <br>
+        <button id="publish" class="btn btn-success"><i class="fa-solid fa-upload fa-bounce me-2"></i>Publish Question</button>
+    </div>
+    <div >
+       
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Question</th>
+                    
+                  </tr>
+            </thead>
+            <tbody id="all-questions">
+                     <!-- All Question Dynamically render here-->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
